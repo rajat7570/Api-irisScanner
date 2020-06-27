@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\user_api.csproj": {}
+    "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\user_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\user_api.csproj": {
+    "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\user_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\user_api.csproj",
+        "projectUniqueName": "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\user_api.csproj",
         "projectName": "user_api",
-        "projectPath": "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\user_api.csproj",
+        "projectPath": "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\user_api.csproj",
         "packagesPath": "C:\\Users\\Rajat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\obj\\",
+        "outputPath": "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

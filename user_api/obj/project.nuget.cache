@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9NmLIWBmZtrtW3GuFtjFZeuXZWRdvYBlx5ZwFG8lPE91CdFNyHV27qA+NA33nL284/AiZDR6GC1bpgZrFkXIuw==",
+  "dgSpecHash": "+3PtjoYTbQfQuiEapTLeherWi8y2UY0q5Ix49UTS9ZecJ9nZbvee1wdVLlKVEDqT9QneAdDt6CDfosiGtuleAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rajat\\source\\repos\\user_api\\user_api\\user_api.csproj",
+  "projectFilePath": "C:\\Users\\Rajat\\source\\repos\\user_api\\Api-irisScanner\\user_api\\user_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rajat\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Rajat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
