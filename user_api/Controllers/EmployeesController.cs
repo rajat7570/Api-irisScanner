@@ -93,13 +93,13 @@ namespace user_api.Controllers
         {
             string iris = model.irisData;
             if (string.IsNullOrEmpty(iris))
-                return Unauthorized();
+                return NotFound();
 
             var emp = _context.Employees.SingleOrDefault(x => x.iris == iris);
 
             // check if username exists
             if (emp == null)
-                return Unauthorized(); 
+                return NotFound(); 
 
             // return ok
             return Ok();
