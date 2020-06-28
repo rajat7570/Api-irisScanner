@@ -88,6 +88,23 @@ namespace user_api.Controllers
             return CreatedAtAction(nameof(GetEmployees), new { id = employees.EmpId }, employees);
         }
 
+        [HttpPost("login")]
+        public IActionResult Authenticate([FromBody] login model)
+        {
+            string iris = model.irisData;
+            if (string.IsNullOrEmpty(iris))
+                return Unauthorized();
+
+            var emp = _context.Employees.SingleOrDefault(x => x.iris == iris);
+
+            // check if username exists
+            if (emp == null)
+                return Unauthorized(); 
+
+            // return ok
+            return Ok();
+        }
+
         // DELETE: api/Employees/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Employees>> DeleteEmployees(long id)
