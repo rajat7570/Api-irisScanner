@@ -14,6 +14,11 @@ namespace user_api.Models
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Employees>().HasIndex(u => u.iris).IsUnique();
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Employees> Employees { get; set; }
     }

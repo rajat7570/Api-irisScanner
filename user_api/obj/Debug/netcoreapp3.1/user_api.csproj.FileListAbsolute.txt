@@ -137,3 +137,4 @@ C:\Users\Rajat\source\repos\user_api\Api-irisScanner\user_api\obj\Debug\netcorea
 C:\Users\Rajat\source\repos\user_api\Api-irisScanner\user_api\obj\Debug\netcoreapp3.1\staticwebassets\user_api.StaticWebAssets.Manifest.cache
 C:\Users\Rajat\source\repos\user_api\Api-irisScanner\user_api\obj\Debug\netcoreapp3.1\staticwebassets\user_api.StaticWebAssets.xml
 C:\Users\Rajat\source\repos\user_api\Api-irisScanner\user_api\obj\Debug\netcoreapp3.1\user_api.genruntimeconfig.cache
+C:\Users\Rajat\source\repos\user_api\Api-irisScanner\user_api\obj\Debug\netcoreapp3.1\user_api.csprojAssemblyReference.cache

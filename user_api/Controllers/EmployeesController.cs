@@ -75,10 +75,10 @@ namespace user_api.Controllers
             return NoContent();
         }
 
-        // POST: api/Employees
+        // POST: api/Employees/register
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<ActionResult<Employees>> PostEmployees(Employees employees)
         {
             _context.Employees.Add(employees);
@@ -99,7 +99,7 @@ namespace user_api.Controllers
 
             // check if username exists
             if (emp == null)
-                return NotFound(); 
+                return NotFound();
 
             // return ok
             return Ok();

@@ -12,6 +12,7 @@ namespace user_api.Models
     {
         [Key]
         public long EmpId { get; set; }
+
         [Required]
         [Index(IsUnique = true)]
         public string iris { get; set; }
