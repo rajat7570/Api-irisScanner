@@ -47,11 +47,13 @@ namespace WebApi.Controllers
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
+
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                    new Claim(ClaimTypes.Name, user.Id.ToString()),
+                    new Claim(ClaimTypes.Role, user.Role ) //SuperAdmin
                 }),
-                //Expires = DateTime.UtcNow.AddDays(7),
+                //Expires = DateTime.UtcNow.AddDays(7), 
                 Expires = DateTime.UtcNow.AddHours(24),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
@@ -65,12 +67,15 @@ namespace WebApi.Controllers
                 Username = user.Username,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
+                Role = user.Role,
                 Token = tokenString
             });
         }
 
         // POST: /users/register
-        [AllowAnonymous]
+
+        //[AllowAnonymous]
+        [Authorize(Roles = "Admin")]
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterModel model)
         {

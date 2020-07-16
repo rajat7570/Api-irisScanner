@@ -82,6 +82,7 @@ namespace user_api
                     ValidateAudience = false
                 };
             });
+        
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
